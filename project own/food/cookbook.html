@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookbook | M&D</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3b3b5a);
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .cookbook-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(30, 30, 47, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .cookbook-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .cookbook-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .cookbook-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .cookbook-card img {
+            width: 100%;
+            border-radius: 5px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .cookbook-card h3 {
+            margin: 10px 0;
+        }
+
+        .cookbook-card a {
+            display: inline-block;
+            margin-top: 10px;
+            background: #ffcc00;
+            color: #1e1e2f;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cookbook-card a:hover {
+            background: #ff6600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(30, 30, 47, 0.9);
+            margin-top: 50px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="cookbook.html" class="active">Cookbook</a></li>
+                <li><a href="dess.html" class="active">Desserts Delight</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>Explore Our Cookbook Collection</h1>
+        <div class="cookbook-container">
+            <p>Find the perfect cookbook for every occasion and taste. Browse through our selections and start cooking today!</p>
+
+            <div class="cookbook-grid">
+                <div class="cookbook-card">
+                    <img src="images/OIP.jpeg" alt="Desserts">
+                    <h3>Desserts Delight</h3>
+                    <p>Indulge in sweet treats and baked goods.</p>
+                    <a href="#">View Cookbook</a>
+                </div>
+
+                <div class="cookbook-card">
+                    <img src="images/OIP (1).jpeg" alt="Quick Meals">
+                    <h3>30-Minute Meals</h3>
+                    <p>Delicious recipes in under 30 minutes.</p>
+                    <a href="#">View Cookbook</a>
+                </div>
+
+                <div class="cookbook-card">
+                    <img src="images\th (1).jpeg" alt="Healthy Recipes">
+                    <h3>Healthy & Nutritious</h3>
+                    <p>Wholesome and nourishing meal ideas.</p>
+                    <a href="#">View Cookbook</a>
+                </div>
+
+                <div class="cookbook-card">
+                    <img src="images\OIP (2).jpeg" alt="International Cuisine">
+                    <h3>World Cuisine</h3>
+                    <p>Explore flavors from around the globe.</p>
+                    <a href="#">View Cookbook</a>
+                </div>
+
+                <div class="cookbook-card">
+                    <img src="images\OIP (3).jpeg" alt="Vegan Recipes">
+                    <h3>Vegan Wonders</h3>
+                    <p>Plant-based recipes for a healthy lifestyle.</p>
+                    <a href="#">View Cookbook</a>
+                </div>
+
+                <div class="cookbook-card">
+                    <img src="images\OIP (4).jpeg" alt="BBQ & Grilling">
+                    <h3>BBQ & Grilling</h3>
+                    <p>Master the art of grilling and BBQ.</p>
+                    <a href="#">View Cookbook</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 M&D | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

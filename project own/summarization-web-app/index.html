@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Exam AI – Text Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 My Exam AI – Text Summarizer</h1>
+
+    <textarea id="inputText" placeholder="Paste your exam notes here..."></textarea>
+    <div class="info">
+        <span id="charCount">Characters: 0</span>
+    </div>
+
+    <label>Summary Length:</label>
+    <select id="summaryLength">
+        <option value="2">Very Short</option>
+        <option value="4" selected>Short</option>
+        <option value="6">Medium</option>
+    </select>
+
+    <button id="summarizeBtn">Generate Summary</button>
+
+    <div id="summaryOutput">
+        <h3>Summary:</h3>
+        <p id="summaryText"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

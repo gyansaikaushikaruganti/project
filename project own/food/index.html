@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&D | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        header {
+            background: #222;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            position: relative;
+            height: 90vh;
+            background: url('images/hero-bg.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .verify-form {
+            margin-top: 20px;
+        }
+
+        input[type="email"] {
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            flex: 1;
+            border-radius: 5px;
+            width: 250px;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            background: #ffcc00;
+            color: #222;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff6600;
+        }
+
+        footer {
+            background: #222;
+            text-align: center;
+            padding: 15px;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="M&D Logo" width="120">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="cookbook.html">Cookbook</a></li>
+                <li><a href="dess.html">Desserts Delight</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to M&D Recipes</h1>
+            <p>Enter your email to verify and explore our delicious recipes!</p>
+            <form class="verify-form" onsubmit="verifyEmail(event)">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button class="btn" type="submit">Verify & Continue</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 M&D | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function verifyEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            if (email) {
+                alert('Email Verified Successfully! Redirecting...');
+                window.location.href = 'recipes.html';
+            }
+        }
+    </script>
+</body>
+</html>
